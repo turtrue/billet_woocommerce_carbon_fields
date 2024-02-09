@@ -948,3 +948,9 @@ textarea {
     margin-right: auto;
     margin-bottom: 1.5em;
 }
+
+/* USER */
+
+body {
+    background: black;
+}

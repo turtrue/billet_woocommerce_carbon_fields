@@ -4,6 +4,18 @@ if (!defined('_S_VERSION')) {
 	define('_S_VERSION', '1.0.0');
 }
 
+// ПОДКЛЮЧЕНИЕ НАСТРОЕК ТЕМЫ
+require get_template_directory() . '/includes/theme-settings.php';
+
+// ПОДКЛЮЧЕНИЕ ОБЛАСТИ ВИДЖЕТОВ
+require get_template_directory() . '/includes/widget-areas.php';
+
+// ПОДКЛЮЧЕНИЕ СТИЛЕЙ И СКРИПТОВ
+require get_template_directory() . '/includes/enqueue-styles-scripts.php';
+
+// ПОДКЛЮЧЕНИЕ ВСПОМОГАТЕЛЬНЫХ ФУНКЦИЙ
+require get_template_directory() . '/includes/helpers.php';
+
 add_action('after_setup_theme', 'crb_load');
 function crb_load()
 {
@@ -17,18 +29,6 @@ function store_register_custom_fields()
 	require get_template_directory() . '/includes/custom-fields-options/metabox.php';
 	require get_template_directory() . '/includes/custom-fields-options/theme-options.php';
 }
-
-// ПОДКЛЮЧЕНИЕ НАСТРОЕК ТЕМЫ
-require get_template_directory() . '/includes/theme-settings.php';
-
-// ПОДКЛЮЧЕНИЕ ОБЛАСТИ ВИДЖЕТОВ
-require get_template_directory() . '/includes/widget-areas.php';
-
-// ПОДКЛЮЧЕНИЕ СТИЛЕЙ И СКРИПТОВ
-require get_template_directory() . '/includes/enqueue-styles-scripts.php';
-
-// ПОДКЛЮЧЕНИЕ ВСПОМОГАТЕЛЬНЫХ ФУНКЦИЙ
-require get_template_directory() . '/includes/helpers.php';
 
 /**
  * Implement the Custom Header feature.
