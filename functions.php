@@ -4,6 +4,8 @@ if (!defined('_S_VERSION')) {
 	define('_S_VERSION', '1.0.0');
 }
 
+
+
 // ПОДКЛЮЧЕНИЕ НАСТРОЕК ТЕМЫ
 require get_template_directory() . '/includes/theme-settings.php';
 

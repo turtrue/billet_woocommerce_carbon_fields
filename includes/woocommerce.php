@@ -20,6 +20,12 @@ function store_woocommerce_scripts()
 }
 add_action('wp_enqueue_scripts', 'store_woocommerce_scripts');
 
+// function woocommerce_support()
+// {
+// 	add_theme_support('woocommerce');
+// }
+// add_action('after_setup_theme', 'woocommerce_support');
+
 /**
  * Disable the default WooCommerce stylesheet.
  *
